@@ -23,6 +23,7 @@ A React + TypeScript quiz application built with Vite based on the provided Quiz
 - 💜 Selected-answer effects
 - 🌈 Gradient buttons
 - 🎞️ Smooth motion and animations
+- Sample : https://quiz-app-edma.vercel.app/
 
 ## 🚀 Run
 
