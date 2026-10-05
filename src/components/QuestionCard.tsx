@@ -39,13 +39,14 @@ export default function QuestionCard({
         ))}
       </div>
 
-      <motion.div
-        className={`answer-feedback ${isCorrect ? 'correct-feedback' : 'incorrect-feedback'}`}
-        initial={{ opacity: 0, y: 12, scale: 0.97 }}
-        animate={answered ? { opacity: 1, y: 0, scale: 1 } : { opacity: 0, y: 12, scale: 0.97 }}
-        transition={{ duration: 0.35 }}
-        aria-live="polite"
-      >
+      {answered && (
+        <motion.div
+          className={`answer-feedback ${isCorrect ? 'correct-feedback' : 'incorrect-feedback'}`}
+          initial={{ opacity: 0, y: 12, scale: 0.97 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.35 }}
+          aria-live="polite"
+        >
         <div className="feedback-icon" aria-hidden="true">
           {isCorrect ? <Check size={28} strokeWidth={3} /> : <X size={28} strokeWidth={3} />}
         </div>
@@ -58,7 +59,8 @@ export default function QuestionCard({
           </span>
         </div>
 
-      </motion.div>
+        </motion.div>
+      )}
     </motion.section>
   )
 }
