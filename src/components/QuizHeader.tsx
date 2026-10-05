@@ -8,7 +8,7 @@ export default function QuizHeader({ score, total }: { score: number; total: num
       </div>
       <div className="quiz-header-right">
         <span>{total} questions • frontend basics</span>
-        <span className="score-badge">Score: {score}/{total}</span>
+        <span className="score-badge" aria-live="polite" aria-label={`Current score: ${score} out of ${total}`}>Score: {score}/{total}</span>
       </div>
     </header>
   )
