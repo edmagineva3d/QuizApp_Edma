@@ -7,7 +7,7 @@ export default function QuizHeader({ score, total }: { score: number; total: num
         <Sparkles size={18} /> Frontend Quiz
       </div>
       <div className="quiz-header-right">
-        <span>{total} questions • frontend basics</span>
+        <span className="quiz-meta">{total} questions • frontend basics</span>
         <span className="score-badge" aria-live="polite" aria-label={`Current score: ${score} out of ${total}`}>Score: {score}/{total}</span>
       </div>
     </header>
