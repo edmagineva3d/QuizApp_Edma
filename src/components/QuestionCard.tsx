@@ -50,7 +50,7 @@ export default function QuestionCard({
           {isCorrect ? <Check size={28} strokeWidth={3} /> : <X size={28} strokeWidth={3} />}
         </div>
         <div className="feedback-copy">
-          <strong>{isCorrect ? 'Yay! Correct!' : 'Oops! Incorrect!'}</strong>
+          <strong>{isCorrect ? 'Correct!' : 'Incorrect!'}</strong>
           <span>
             {isCorrect
               ? 'Great job! You got the correct answer.'
