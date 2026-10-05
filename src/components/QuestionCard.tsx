@@ -46,7 +46,7 @@ export default function QuestionCard({
         transition={{ duration: 0.35 }}
         aria-live="polite"
       >
-        <div className="feedback-icon">
+        <div className="feedback-icon" aria-hidden="true">
           {isCorrect ? <Check size={28} strokeWidth={3} /> : <X size={28} strokeWidth={3} />}
         </div>
         <div className="feedback-copy">
